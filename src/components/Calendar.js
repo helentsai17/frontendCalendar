@@ -93,7 +93,7 @@ class Calendar extends React.Component {
 
     passedDate(day) {
         const isAfter = require('date-fns/is_after')
-        var ispass = isAfter(new Date(day), dateFns.subDays(this.state.selectedDate, 2))
+        var ispass = isAfter(new Date(day), dateFns.subDays(this.state.selectedDate, 1))
 
         return ispass;
     }
